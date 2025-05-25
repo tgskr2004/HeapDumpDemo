@@ -1,5 +1,11 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class OOMSimulator {
     public static void main(String[] args) {
-        int[] memoryFillIntVar = new int[Integer.MAX_VALUE];
+        List<int[]> memoryHog = new ArrayList<>();
+        while (true) {
+            memoryHog.add(new int[100000]);
+        }
     }
 }
