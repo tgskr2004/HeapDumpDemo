@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                     java -cp . \
-                         -Xmx64m \
+                         -Xmx16g \
                          -XX:+HeapDumpOnOutOfMemoryError \
                          -XX:HeapDumpPath=heapdump.hprof \
                          OOMSimulator || true
